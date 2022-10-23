@@ -12,21 +12,19 @@ body
 .green
   z-index: -1
   position: absolute
-  width: 590px
-  height: 594px
-  left: calc(50% - 590px/2 - 528px)
-  top: -245px
-  background: rgba(84, 197, 173, 0.95)
-  filter: blur(217px)
+  width: 1500px
+  height: 1500px
+  left: -450px
+  top: -650px
+  background: radial-gradient(rgba(84, 197, 173, 0.7), transparent, transparent)
 .blue
   z-index: -1
   position: absolute
-  width: 590px
-  height: 594px
-  left: calc(50% - 590px/2 + 722px)
-  top: 552px
-  background: #52A7C6
-  filter: blur(217px)
+  width: 1500px
+  height: 1500px
+  left: 920px
+  top: 152px
+  background: radial-gradient(#52A7C6, transparent, transparent)
 .header
   width: 100%
   height: 100vh
@@ -85,6 +83,19 @@ body
       font-size: 27px
       line-height: 34px
       cursor: pointer
-.button__left
-  background-color: #23263C
-  margin-right: 22px
+.button
+  &__left
+    background-color: #23263C
+    margin-right: 22px
+    transition: 0.75s
+    &:hover
+      background-color: transparent
+      color: #54C5AD
+  &__right
+    transition: 0.75s
+    &:hover
+      color: #54C5AD
+
+.main
+  padding-top: 250px
+  z-index: -100
