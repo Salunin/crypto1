@@ -40,7 +40,6 @@ body {
 
 .header {
   width: 100%;
-  height: 100vh;
   padding-top: 92px;
   position: relative;
   overflow: hidden;
@@ -88,6 +87,9 @@ body {
   transition: 0.5s;
   color: #54C5AD;
 }
+.header__main {
+  margin-bottom: 200px;
+}
 .header__main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +120,60 @@ body {
   font-size: 27px;
   line-height: 34px;
   cursor: pointer;
+}
+.header__featured {
+  padding-bottom: 200px;
+}
+.header__featured-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+}
+.header__featured-block {
+  position: relative;
+  border: 2px solid #5BD2BD;
+  background: #23263C;
+  padding: 45px 84px 45px 64px;
+}
+.header__featured-block-mask {
+  position: absolute;
+  z-index: -1;
+  border: 2px solid #5BD2BD;
+  right: 0px;
+  bottom: -8px;
+  top: 8px;
+  left: -8px;
+}
+.header__featured-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__featured-list {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.header__featured-link {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+  opacity: 0.5;
+}
+.header__featured-link:hover {
+  color: #54C5AD;
+  opacity: 1;
 }
 
 .button__left {
