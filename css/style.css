@@ -30,8 +30,8 @@ body {
 .blue {
   z-index: -1;
   position: absolute;
-  width: 1800px;
-  height: 1800px;
+  width: 1700px;
+  height: 1700px;
   left: 800px;
   top: 50px;
   background: -o-radial-gradient(#52A7C6, transparent, transparent);
